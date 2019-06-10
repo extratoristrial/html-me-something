@@ -1,0 +1,142 @@
+#root {
+    font-family: 'Alegreya', serif;
+    color: silver;
+
+}
+
+#navigation {
+    border: 0.5px;
+    border-style: solid;
+    border-color: mediumaquamarine;
+    text-shadow: 1px 1px rgb(150, 233, 205);
+    position: sticky;
+    top: 0;
+}
+
+#navigation > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#navigation > ul > li {
+    display: inline;
+    position: relative;
+}
+
+#navigation a + ul {
+    left: 0;
+    position: ABSOLUTE;
+    display: none;
+    list-style: none;
+    padding: 10px;
+    background-color: white;
+    width: 80px;
+}
+
+#navigation a + ul:hover,
+#navigation a:hover + ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer {
+    text-align: center;
+    }
+
+#greeting {
+    text-align: center;
+    color: mediumaquamarine;
+}
+
+#greeting>p {
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px rgb(150, 233, 205);
+    transition: .5s all ease;
+    }
+
+h1:hover {
+    text-shadow: none;
+}
+
+h3 {
+    text-align: center;
+}
+
+img {
+    margin-right: 5px;
+    float: left;
+    display: block;
+    }
+
+a {
+    color: mediumaquamarine;
+    text-decoration: none;
+    }
+
+a:visited {
+    color: silver;
+    }
+
+a:hover {
+    color: whitesmoke;
+    transition: .15s font-size ease;
+    font-size: 125%;
+
+    }
+
+form {
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+input[type=text],
+input[type=email],
+input[type=number] {
+    width: 200px;
+    margin: 5px 5px;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    margin: 5px 5px;
+}
+
+input[type=submit] {
+    margin: 5px 5px;
+    background-color: white;
+    color: silver;
+    text-shadow: .5px .5px rgb(150, 233, 205);
+    border: none;
+    font-size: 25px;
+}
+
+input[type=submit]:hover {
+    background-color: mediumaquamarine;
+    color: mediumaquamarine;
+    text-shadow: none;
+}
+
+select {
+    margin: 5px 5px;
+}
+.fab {
+    color: mediumaquamarine;
+}
+
+.fab:hover {
+    transition: .15s font-size ease;
+    font-size: 125%;
+}
+
+.far {
+    color: mediumaquamarine;
+}
