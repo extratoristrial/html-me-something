@@ -1,59 +1,85 @@
+
 body {
-    font-family: 'Alegreya', serif;
-    color: #888888;
+    font-family: 'Bai Jamjuree', sans-serif;
+    margin: 0;
     display: grid;
-    grid-template-rows: 20% 70% 10%;
-    grid-template-columns: 50% 50%;
-    grid-template-areas:
-        "header header"
-        "content content"
-        "footer footer"
-        }
-
-.content {
-    grid-area: content;}
-
-.header {
+    box-sizing: border-box;
+    grid-template-areas: "Header"
+    "Content"
+    "Footer";
+    grid-template-rows: 6.5% auto 5%;
+    /* height: 100vh; */
 }
 
-.footer {
-}
-
-
-#navigation a + ul {
-    left: 0;
-    position: ABSOLUTE;
-    display: none;
-    list-style: none;
-    padding: 10px;
-    background-color: white;
-    width: 80px;
-}
-
-#navigation a + ul:hover,
-#navigation a:hover + ul {
-    display: flex;
-    flex-direction: column;
-}
-
-#footer {
+header {
     text-align: center;
-    }
+    line-height: 1vh;
+    grid-area: Header;
+    margin-top: 1.5%;
+}
+
+#nav {
+    padding-top: 10px;
+}
+
+main {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 95%;
+}
+
+footer { 
+    text-align: center;
+    grid-area: Footer;
+}
+
+figcaption {
+    font-size: 85%;
+    font-style: italic;
+}
+
+.fun {
+    color: mediumaquamarine;    
+}
 
 #greeting {
-    text-align: center;
-    color: mediumaquamarine;
+text-align: center;
 }
 
-#greeting>p {
-    font-weight: bold;
+#greeting>img {
+    width: 60%;
+}
+
+ul {
+    position: relative;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1.2em;
+}
+
+li:before {
+    content: "+";
+    position: relative;
+    left: -1%;
+}
+
+#oli {
+    text-align: left;
+    padding: 5%;
+}
+
+#ango {
+    text-align: right;
+    padding: 5%;
 }
 
 h1 {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 200%;
     text-align: center;
     text-shadow: 2px 2px rgb(150, 233, 205);
     transition: .5s all ease;
-    }
+}
 
 h1:hover {
     text-shadow: none;
@@ -61,11 +87,12 @@ h1:hover {
 
 h3 {
     text-align: center;
+    font-style: italic;
 }
 
 img {
     width: 20%;
-    }
+}
 
 a {
     color: mediumaquamarine;
@@ -78,9 +105,6 @@ a:visited {
 
 a:hover {
     color: whitesmoke;
-    transition: .15s font-size ease;
-    font-size: 125%;
-
     }
 
 .fab {
@@ -88,8 +112,8 @@ a:hover {
 }
 
 .fab:hover {
-    transition: .15s font-size ease;
-    font-size: 125%;
+    transition: .25s font-size ease;
+    font-size: 105%;
 }
 
 .far {
