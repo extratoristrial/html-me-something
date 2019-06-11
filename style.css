@@ -1,28 +1,24 @@
-#root {
+body {
     font-family: 'Alegreya', serif;
-    color: silver;
+    color: #888888;
+    display: grid;
+    grid-template-rows: 20% 70% 10%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+        "header header"
+        "content content"
+        "footer footer"
+        }
 
+.content {
+    grid-area: content;}
+
+.header {
 }
 
-#navigation {
-    border: 0.5px;
-    border-style: solid;
-    border-color: mediumaquamarine;
-    text-shadow: 1px 1px rgb(150, 233, 205);
-    position: sticky;
-    top: 0;
+.footer {
 }
 
-#navigation > ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-#navigation > ul > li {
-    display: inline;
-    position: relative;
-}
 
 #navigation a + ul {
     left: 0;
@@ -68,9 +64,7 @@ h3 {
 }
 
 img {
-    margin-right: 5px;
-    float: left;
-    display: block;
+    width: 20%;
     }
 
 a {
@@ -89,45 +83,6 @@ a:hover {
 
     }
 
-form {
-    margin: 10px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
-}
-
-input[type=text],
-input[type=email],
-input[type=number] {
-    width: 200px;
-    margin: 5px 5px;
-}
-
-input[type=radio],
-input[type=checkbox] {
-    margin: 5px 5px;
-}
-
-input[type=submit] {
-    margin: 5px 5px;
-    background-color: white;
-    color: silver;
-    text-shadow: .5px .5px rgb(150, 233, 205);
-    border: none;
-    font-size: 25px;
-}
-
-input[type=submit]:hover {
-    background-color: mediumaquamarine;
-    color: mediumaquamarine;
-    text-shadow: none;
-}
-
-select {
-    margin: 5px 5px;
-}
 .fab {
     color: mediumaquamarine;
 }
