@@ -98,13 +98,15 @@ a {
     color: mediumaquamarine;
     text-decoration: none;
     }
-
+/* 
 a:visited {
     color: silver;
-    }
+    } */
 
 a:hover {
-    color: whitesmoke;
+    color: rgb(0, 0, 0);
+    /* transition: .5s font-color ease; */
+    font-style: italic;
     }
 
 .fab {
